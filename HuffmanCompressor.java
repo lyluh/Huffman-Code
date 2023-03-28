@@ -1,6 +1,10 @@
 import java.io.*;
 import java.util.*;
 
+// HuffmanCompressor handles:
+// computing character frequencies for a given input file (these frequencies are passed to the first HuffmanCode constructor)
+// compressing a text file using a given Huffman tree
+// producing a BitInputStream from a given compressed input file (this stream is passed to the translate method)
 public class HuffmanCompressor {
     private String filename;
 
